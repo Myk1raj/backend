@@ -10,9 +10,9 @@ const { type } = require("os");
 const { error } = require("console");
 app.use(express.json());
 app.use(cors());
-
+mongo_db='mongodb+srv://myk_raj:0050@cluster0.ddurdrx.mongodb.net/ecommerce';
 // database connection with mongoose
-mongoose.connect('mongodb+srv://myk_raj:0050@cluster0.ddurdrx.mongodb.net/ecommerce');
+mongoose.connect(mongo_db);
 
 
 // api creation
